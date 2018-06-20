@@ -11,7 +11,7 @@ createChain();
 	
 > **交易查询**
 
-selectTransaction(String transactionId) // 交易ID标识
+selectTransaction(String transactionId) // 交易ID标识，请求钱包接口
 	查询交易信息
 
 
@@ -30,7 +30,17 @@ transaction(String mnemonic, String toAddr, long coin); // 助记词（加密）
 
 	根据"链ID",打包交易信息，推送到指定的区块链。（持久化存储）,返回交易ID标识
 
+> **交易查询**
 
+selectTransaction(String transactionId) // 交易ID标识
+
+	查询交易信息
+	
+> **余额查询**
+
+getBalance(String addr) // 地址
+
+	查询余额
 
 
 
