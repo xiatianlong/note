@@ -4,6 +4,7 @@
 ###### 提供用户的管理
 
 > **创建区块链**
+
 createChain();
 
 	创建区块链，返回链标识
@@ -18,6 +19,7 @@ selectTransaction(String transactionId) // 交易ID标识
 ###  钱包
 ###### 用户使用
 > **生成地址**
+
 createWallet(String chainId); // 链标识
 
 	根据"链ID"生成助记词->秘钥->地址，(持久化存储)，返回助记词（加密）
